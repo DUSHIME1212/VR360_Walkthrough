@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using VRCampusTour.Location;
@@ -13,7 +14,7 @@ namespace VRCampusTour.Interaction
     {
         [Header("References")]
         [SerializeField] private Image iconImage;
-        [SerializeField] private Text labelText;
+        [SerializeField] private TextMeshProUGUI labelText;
         [SerializeField] private GameObject visualContainer;
 
         [Header("Visual Settings")]
