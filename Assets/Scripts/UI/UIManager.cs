@@ -1,26 +1,38 @@
 using UnityEngine;
+using TMPro;
 using VRCampusTour.Utils;
 using VRCampusTour.UI;
+using VRCampusTour.Location;
 
 namespace VRCampusTour.UI
 {
     /// <summary>
     /// Manages all UI panels and displays
     /// </summary>
-    public class UIManager : Singleton<UIManager>
+    public class UIManager : MonoBehaviour
     {
+        public static UIManager Instance { get; private set; }
+
         [Header("UI Panels")]
         [SerializeField] private InfoPanel infoPanel;
         [SerializeField] private NavigationMenu navigationMenu;
         [SerializeField] private GameObject pauseMenu;
 
         [Header("HUD Elements")]
-        [SerializeField] private UnityEngine.UI.Text locationNameText;
-        [SerializeField] private UnityEngine.UI.Text progressText;
+        [SerializeField] private TextMeshProUGUI locationNameText;
+        [SerializeField] private TextMeshProUGUI progressText;
 
-        protected override void Awake()
+        void Awake()
         {
-            base.Awake();
+            // Singleton pattern
+            if (Instance != null && Instance != this)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            Instance = this;
+
             InitializePanels();
         }
 
@@ -32,24 +44,24 @@ namespace VRCampusTour.UI
         void OnDestroy()
         {
             UnsubscribeFromEvents();
+
+            // Clear singleton reference
+            if (Instance == this)
+            {
+                Instance = null;
+            }
         }
 
         void InitializePanels()
         {
             if (infoPanel != null)
-            {
                 infoPanel.Hide();
-            }
 
             if (navigationMenu != null)
-            {
                 navigationMenu.Hide();
-            }
 
             if (pauseMenu != null)
-            {
                 pauseMenu.SetActive(false);
-            }
         }
 
         void SubscribeToEvents()
@@ -68,7 +80,7 @@ namespace VRCampusTour.UI
             }
         }
 
-        void HandleLocationChanged(Location.LocationData newLocation)
+        void HandleLocationChanged(LocationData newLocation)
         {
             UpdateLocationDisplay(newLocation);
             UpdateProgress();
@@ -77,33 +89,25 @@ namespace VRCampusTour.UI
         public void ShowInfoPanel(string title, string content)
         {
             if (infoPanel != null)
-            {
                 infoPanel.Show(title, content);
-            }
         }
 
         public void HideInfoPanel()
         {
             if (infoPanel != null)
-            {
                 infoPanel.Hide();
-            }
         }
 
         public void ShowNavigationMenu()
         {
             if (navigationMenu != null)
-            {
                 navigationMenu.Show();
-            }
         }
 
         public void HideNavigationMenu()
         {
             if (navigationMenu != null)
-            {
                 navigationMenu.Hide();
-            }
         }
 
         public void TogglePauseMenu()
@@ -116,7 +120,7 @@ namespace VRCampusTour.UI
             }
         }
 
-        void UpdateLocationDisplay(Location.LocationData location)
+        void UpdateLocationDisplay(LocationData location)
         {
             if (locationNameText != null && location != null)
             {

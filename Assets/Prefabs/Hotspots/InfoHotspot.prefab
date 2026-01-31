@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7655533045075841373}
   - component: {fileID: 3913437390594411407}
   - component: {fileID: 608523099688339618}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 3194337019803972421}
   - component: {fileID: 4594565160392111059}
   - component: {fileID: 1357307840183953614}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 6605535550377891604}
   - component: {fileID: 5024621549279257750}
   - component: {fileID: 7539067327331064445}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 5015913971661676626}
   - component: {fileID: 4960687560670554524}
   - component: {fileID: 1339699080033268103}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GlowLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6143563952443712324}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: VisualContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 2255054596428663374}
   - component: {fileID: 8507535954520534392}
   - component: {fileID: 8108336493144277296}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: InfoHotspot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

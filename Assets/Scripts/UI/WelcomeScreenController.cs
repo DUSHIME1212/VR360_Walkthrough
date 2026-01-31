@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 using VRCampusTour.Core;
 
 namespace VRCampusTour.UI
@@ -12,8 +13,8 @@ namespace VRCampusTour.UI
     public class WelcomeSceneController : MonoBehaviour
     {
         [Header("UI Elements")]
-        [SerializeField] private Text titleText;
-        [SerializeField] private Text subtitleText;
+        [SerializeField] private TextMeshProUGUI titleText;
+        [SerializeField] private TextMeshProUGUI subtitleText;
         [SerializeField] private Button startButton;
         [SerializeField] private Button quitButton;
 

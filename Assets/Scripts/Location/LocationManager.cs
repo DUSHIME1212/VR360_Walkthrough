@@ -3,6 +3,8 @@ using System.Collections;
 using VRCampusTour.Core;
 using VRCampusTour.UI;
 using VRCampusTour.Utils;
+using VRCampusTour.Location;
+using VRCampusTour.Interaction;
 
 namespace VRCampusTour.Location
 {
@@ -151,7 +153,7 @@ namespace VRCampusTour.Location
             hotspot.transform.Rotate(0, 180, 0);
 
             // Configure hotspot
-            var infoHotspot = hotspot.GetComponent<Interaction.InfoHotspot>();
+            var infoHotspot = hotspot.GetComponent<InfoHotspot>();
             if (infoHotspot != null)
             {
                 infoHotspot.Initialize(data);
@@ -170,7 +172,7 @@ namespace VRCampusTour.Location
             hotspot.transform.Rotate(0, 180, 0);
 
             // Configure hotspot
-            var navHotspot = hotspot.GetComponent<Interaction.NavigationHotspot>();
+            var navHotspot = hotspot.GetComponent<NavigationHotspot>();
             if (navHotspot != null)
             {
                 navHotspot.Initialize(data);

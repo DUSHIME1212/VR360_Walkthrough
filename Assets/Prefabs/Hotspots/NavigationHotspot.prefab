@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4431519793222734065}
   - component: {fileID: 6338531657737678683}
   - component: {fileID: 8351463154046086440}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PreviewImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7638972231442667304}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: VisualContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 2056713082136365801}
   - component: {fileID: 3695113206084993225}
   - component: {fileID: 7926645439994306924}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NavigationHotspot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 4482094461778046092}
   - component: {fileID: 8079156334766684273}
   - component: {fileID: 4090773424533074329}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 7077160716478411689}
   - component: {fileID: 2369660385868303491}
   - component: {fileID: 4220900689091632144}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ArrowIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 2792494012373487647}
   - component: {fileID: 5543160271044912743}
   - component: {fileID: 7612760182664084878}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 2102786940503513489}
   - component: {fileID: 3328973986026740444}
   - component: {fileID: 3938427035687029648}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BackgroundPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
