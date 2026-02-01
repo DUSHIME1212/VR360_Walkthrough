@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 using VRCampusTour.Core;
 
 namespace VRCampusTour.UI
@@ -11,8 +12,8 @@ namespace VRCampusTour.UI
     public class OutroSceneController : MonoBehaviour
     {
         [Header("UI Elements")]
-        [SerializeField] private Text summaryText;
-        [SerializeField] private Text statsText;
+        [SerializeField] private TextMeshProUGUI summaryText;
+        [SerializeField] private TextMeshProUGUI statsText;
         [SerializeField] private Button restartButton;
         [SerializeField] private Button mainMenuButton;
         [SerializeField] private Button quitButton;
@@ -21,9 +22,9 @@ namespace VRCampusTour.UI
         [SerializeField] private CanvasGroup mainCanvasGroup;
         [SerializeField] private float fadeInDuration = 2f;
 
-        [Header("Audio")]
-        [SerializeField] private AudioClip outroMusic;
-        [SerializeField] private AudioClip buttonClickSound;
+        // [Header("Audio")]
+        // [SerializeField] private AudioClip outroMusic;
+        // [SerializeField] private AudioClip buttonClickSound;
 
         void Start()
         {
@@ -85,10 +86,10 @@ namespace VRCampusTour.UI
             }
 
             // Play outro music
-            if (outroMusic != null && AudioManager.Instance != null)
-            {
-                AudioManager.Instance.PlayMusic(outroMusic, true);
-            }
+            // if (outroMusic != null && AudioManager.Instance != null)
+            // {
+            //     AudioManager.Instance.PlayMusic(outroMusic, true);
+            // }
 
             // Fade in UI
             if (mainCanvasGroup != null)
@@ -106,7 +107,7 @@ namespace VRCampusTour.UI
 
         void OnRestartClicked()
         {
-            PlayButtonSound();
+            // PlayButtonSound();
             
             if (SceneController.Instance != null)
             {
@@ -116,7 +117,7 @@ namespace VRCampusTour.UI
 
         void OnMainMenuClicked()
         {
-            PlayButtonSound();
+            // PlayButtonSound();
             
             if (SceneController.Instance != null)
             {
@@ -126,7 +127,7 @@ namespace VRCampusTour.UI
 
         void OnQuitClicked()
         {
-            PlayButtonSound();
+            // PlayButtonSound();
             
             if (SceneController.Instance != null)
             {
@@ -134,12 +135,12 @@ namespace VRCampusTour.UI
             }
         }
 
-        void PlayButtonSound()
-        {
-            if (buttonClickSound != null && AudioManager.Instance != null)
-            {
-                AudioManager.Instance.PlaySFX(buttonClickSound);
-            }
-        }
+        // void PlayButtonSound()
+        // {
+        //     if (buttonClickSound != null && AudioManager.Instance != null)
+        //     {
+        //         AudioManager.Instance.PlaySFX(buttonClickSound);
+        //     }
+        // }
     }
 }
