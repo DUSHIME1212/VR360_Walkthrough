@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace VRCampusTour.Location
 {
-    [CreateAssetMenu(fileName = "LocationData", menuName = "Campus Walkthrough/Location Data")]
     [Serializable]
     public class LocationData
     {
