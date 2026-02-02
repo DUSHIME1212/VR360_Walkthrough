@@ -1396,9 +1396,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15985715128502e4383c972ed205db7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VRCampusTour.UI.NavigationMenu
-  buttonContainer: {fileID: 0}
+  buttonContainer: {fileID: 5937364567508939334}
   navigationButtonPrefab: {fileID: 0}
-  closeButton: {fileID: 0}
+  closeButton: {fileID: 6487222776573581900}
   canvasGroup: {fileID: 0}
   openSound: {fileID: 0}
   closeSound: {fileID: 0}
@@ -2170,10 +2170,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bad3c3abcb43b944a87f6c95ebfa379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VRCampusTour.UI.InfoPanel
-  panel: {fileID: 0}
-  titleText: {fileID: 0}
-  contentText: {fileID: 0}
-  closeButton: {fileID: 0}
+  panel: {fileID: 8708294899352365704}
+  titleText: {fileID: 1933692213262351451}
+  contentText: {fileID: 8398400839171775661}
+  closeButton: {fileID: 3177511415151995956}
 --- !u!1 &8774858689832089990
 GameObject:
   m_ObjectHideFlags: 0

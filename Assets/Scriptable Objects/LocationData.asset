@@ -13,21 +13,29 @@ MonoBehaviour:
   m_Name: LocationData
   m_EditorClassIdentifier: Assembly-CSharp:VRCampusTour.Location:LocationDataSO
   locations:
-  - locationName: StreetView1
-    description: 
-    skyboxMaterial: {fileID: 0}
-    ambienceAudio: {fileID: 0}
-    infoHotspots: []
-    navigationPoints: []
-  - locationName: 
-    description: 
-    skyboxMaterial: {fileID: 0}
-    ambienceAudio: {fileID: 0}
-    infoHotspots: []
-    navigationPoints: []
-  - locationName: 
-    description: 
-    skyboxMaterial: {fileID: 0}
-    ambienceAudio: {fileID: 0}
-    infoHotspots: []
-    navigationPoints: []
+  - locationName: Kimironko - Walking Tour
+    description: Experience a guided walk through of Kimironko streets
+    skyboxMaterial: {fileID: 2100000, guid: 10d6b01222aa24e3b84a45eff7061106, type: 2}
+    infoHotspots:
+    - title: 1
+      information: trial
+      worldPosition: {x: 0, y: 0, z: 0}
+      icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+    navigationPoints:
+    - destinationName: view2
+      destinationLocationIndex: 0
+      worldPosition: {x: 100, y: 100, z: 0}
+      previewImage: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  - locationName: Kimironko - Walking Tour
+    description: Experience a guided walk through of Kimironko streets
+    skyboxMaterial: {fileID: 2100000, guid: fede30bb60fcb42d7b7765946c375b19, type: 2}
+    infoHotspots:
+    - title: 1
+      information: trial
+      worldPosition: {x: 0, y: 0, z: 0}
+      icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+    navigationPoints:
+    - destinationName: view2
+      destinationLocationIndex: 0
+      worldPosition: {x: 100, y: 100, z: 0}
+      previewImage: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
