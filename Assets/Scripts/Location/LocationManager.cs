@@ -115,10 +115,10 @@ namespace VRCampusTour.Location
             }
 
             // Play ambience
-            if (location.ambienceAudio != null && AudioManager.Instance != null)
-            {
-                AudioManager.Instance.PlayAmbience(location.ambienceAudio, true);
-            }
+            // if (location.ambienceAudio != null && AudioManager.Instance != null)
+            // {
+            //     AudioManager.Instance.PlayAmbience(location.ambienceAudio, true);
+            // }
 
             // Create info hotspots
             if (location.infoHotspots != null)

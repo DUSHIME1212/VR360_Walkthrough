@@ -10,7 +10,7 @@ namespace VRCampusTour.Location
         public string locationName;
         public string description;
         public Material skyboxMaterial;
-        public AudioClip ambienceAudio;
+        // public AudioClip ambienceAudio;
         public List<HotspotData> infoHotspots;
         public List<NavigationData> navigationPoints;
     }
