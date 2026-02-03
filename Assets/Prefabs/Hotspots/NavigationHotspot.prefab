@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 7926645439994306924}
   m_Layer: 6
   m_Name: NavigationHotspot
-  m_TagString: Untagged
+  m_TagString: Navigation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
