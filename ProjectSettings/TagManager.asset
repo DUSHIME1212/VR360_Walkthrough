@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Info
+  - InfoHotspot
+  - NavigationHotspot
+  - Navigation
   layers:
   - Default
   - TransparentFX

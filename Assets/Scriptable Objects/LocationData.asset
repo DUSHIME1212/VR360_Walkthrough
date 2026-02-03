@@ -22,7 +22,11 @@ MonoBehaviour:
       information: descrription
       worldPosition: {x: 0, y: 0, z: 0}
       icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-    navigationPoints: []
+    navigationPoints:
+    - destinationName: Next road
+      destinationLocationIndex: 1
+      worldPosition: {x: 1, y: 1, z: 1}
+      previewImage: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   - locationName: 
     description: 
     skyboxMaterial: {fileID: 0}
