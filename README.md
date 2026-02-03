@@ -1,4 +1,5 @@
-VR 360° Tour Walkthrough
+**VR 360° Tour Walkthrough**
+
 A VR app for exploring Kimironko Neighbourhood in 360°. Look around and click on hotspots to learn about locations or navigate to other areas.
 Features
 
