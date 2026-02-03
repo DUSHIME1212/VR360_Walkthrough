@@ -5,8 +5,8 @@ Features
 
 *360° panoramic environments*
 
--[] Gaze-based interaction (look to interact)
--[] Multiple campus locations
+Gaze-based interaction (look to interact)
+Multiple campus locations
 Info hotspots and navigation points
 Background audio and effects
 Smooth transitions between locations
