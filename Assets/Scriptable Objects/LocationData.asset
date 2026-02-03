@@ -14,6 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp:VRCampusTour.Location:LocationDataSO
   locations:
   - locationName: StreetView1
+    description: Hello
+    skyboxMaterial: {fileID: 2100000, guid: 10d6b01222aa24e3b84a45eff7061106, type: 2}
+    ambienceAudio: {fileID: 0}
+    infoHotspots:
+    - title: Hello
+      information: descrription
+      worldPosition: {x: 0, y: 0, z: 0}
+      icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    navigationPoints: []
+  - locationName: 
     description: 
     skyboxMaterial: {fileID: 0}
     ambienceAudio: {fileID: 0}
