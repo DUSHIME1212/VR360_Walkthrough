@@ -3,9 +3,10 @@
 A VR app for exploring Kimironko Neighbourhood in 360°. Look around and click on hotspots to learn about locations or navigate to other areas.
 Features
 
-360° panoramic environments
-Gaze-based interaction (look to interact)
-Multiple campus locations
+*360° panoramic environments*
+
+-[] Gaze-based interaction (look to interact)
+-[] Multiple campus locations
 Info hotspots and navigation points
 Background audio and effects
 Smooth transitions between locations
