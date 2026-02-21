@@ -10,7 +10,7 @@ namespace VRCampusTour.UI
     /// <summary>
     /// Controls the welcome/intro scene
     /// </summary>
-    public class WelcomeSceneController : MonoBehaviour
+    public class WelcomeScreenController : MonoBehaviour
     {
         [Header("UI Elements")]
         [SerializeField] private TextMeshProUGUI titleText;

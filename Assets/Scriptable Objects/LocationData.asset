@@ -40,7 +40,7 @@ MonoBehaviour:
     description: A paved residential road flanked by walled compounds. Palm trees
       and a modern white multi-story house are visible ahead. A parked car sits near
       one of the driveways.
-    skyboxMaterial: {fileID: 0}
+    skyboxMaterial: {fileID: 2100000, guid: 968fd6671f1ed9440ab5b1b8f2aec69e, type: 2}
     ambienceAudio: {fileID: 0}
     infoHotspots:
     - title: Modern Residential House
@@ -67,7 +67,7 @@ MonoBehaviour:
     description: A quiet junction where a dark grey compound wall with barbed wire
       meets the road. A power transmission tower rises above the roofline. Pink flowers
       and ornamental plants decorate the roadside.
-    skyboxMaterial: {fileID: 0}
+    skyboxMaterial: {fileID: 2100000, guid: 1f2024384ced7d74bb5a1dea30bca513, type: 2}
     ambienceAudio: {fileID: 0}
     infoHotspots:
     - title: Power Transmission Tower
@@ -99,7 +99,7 @@ MonoBehaviour:
     description: An open intersection dominated by a large steel electricity pylon.
       Well-maintained hedges and compound walls line both sides. The road continues
       down a gentle slope toward the wider neighborhood.
-    skyboxMaterial: {fileID: 2100000, guid: 968fd6671f1ed9440ab5b1b8f2aec69e, type: 2}
+    skyboxMaterial: {fileID: 2100000, guid: d4d4a875fb76f0744a16cca36d8207ad, type: 2}
     ambienceAudio: {fileID: 0}
     infoHotspots:
     - title: Lattice Steel Pylon
@@ -126,7 +126,7 @@ MonoBehaviour:
     description: The road slopes downhill with a panoramic view of surrounding hills
       in the distance. Palm trees rise behind compound walls. A utility junction
       box sits at the roadside.
-    skyboxMaterial: {fileID: 2100000, guid: 1f2024384ced7d74bb5a1dea30bca513, type: 2}
+    skyboxMaterial: {fileID: 2100000, guid: 48661974b74c0b5488592609c02c0ca6, type: 2}
     ambienceAudio: {fileID: 0}
     infoHotspots:
     - title: Distant Hills
@@ -153,7 +153,7 @@ MonoBehaviour:
     description: A striking property entrance with a decorative arched gate flanked
       by stone pillars and palm trees. Across the road stands a tall brick multi-story
       house with balconies. Hills are visible in the background.
-    skyboxMaterial: {fileID: 2100000, guid: d4d4a875fb76f0744a16cca36d8207ad, type: 2}
+    skyboxMaterial: {fileID: 2100000, guid: ae4c70e27c76ac747b644de33c8c64d8, type: 2}
     ambienceAudio: {fileID: 0}
     infoHotspots:
     - title: Arched Ornamental Gate
@@ -181,7 +181,7 @@ MonoBehaviour:
     description: A hillside road with sweeping views across the valley and distant
       hills. Stone boundary walls and manicured lawns line the route. A utility pole
       with converging wires stands at the bend.
-    skyboxMaterial: {fileID: 2100000, guid: 48661974b74c0b5488592609c02c0ca6, type: 2}
+    skyboxMaterial: {fileID: 2100000, guid: 19fd5960f4ce8744e89e588aef795c15, type: 2}
     ambienceAudio: {fileID: 0}
     infoHotspots:
     - title: Valley Panorama
