@@ -44,6 +44,13 @@ namespace VRCampusTour.VR
 
         void Update()
         {
+            // Keep trying to find the camera if it wasn't available at Start
+            if (mainCamera == null)
+            {
+                mainCamera = Camera.main;
+                if (mainCamera == null) return;
+            }
+
             PerformGazeRaycast();
             UpdateGazeProgress();
             UpdateReticleVisuals();

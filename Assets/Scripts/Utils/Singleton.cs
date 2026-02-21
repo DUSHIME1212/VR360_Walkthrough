@@ -17,7 +17,6 @@ namespace VRCampusTour.Utils
             {
                 if (applicationIsQuitting)
                 {
-                    Debug.LogWarning($"[Singleton] Instance '{typeof(T)}' already destroyed. Returning null.");
                     return null;
                 }
 

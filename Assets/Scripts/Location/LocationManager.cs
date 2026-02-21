@@ -149,8 +149,11 @@ namespace VRCampusTour.Location
             hotspot.transform.position = data.worldPosition;
 
             // Look at camera
-            hotspot.transform.LookAt(Camera.main.transform);
-            hotspot.transform.Rotate(0, 180, 0);
+            if (Camera.main != null)
+            {
+                hotspot.transform.LookAt(Camera.main.transform);
+                hotspot.transform.Rotate(0, 180, 0);
+            }
 
             // Configure hotspot
             var infoHotspot = hotspot.GetComponent<InfoHotspot>();
@@ -168,8 +171,11 @@ namespace VRCampusTour.Location
             hotspot.transform.position = data.worldPosition;
 
             // Look at camera
-            hotspot.transform.LookAt(Camera.main.transform);
-            hotspot.transform.Rotate(0, 180, 0);
+            if (Camera.main != null)
+            {
+                hotspot.transform.LookAt(Camera.main.transform);
+                hotspot.transform.Rotate(0, 180, 0);
+            }
 
             // Configure hotspot
             var navHotspot = hotspot.GetComponent<NavigationHotspot>();

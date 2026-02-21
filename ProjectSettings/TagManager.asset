@@ -8,6 +8,7 @@ TagManager:
   - InfoHotspot
   - NavigationHotspot
   - Navigation
+  - Hotspot
   layers:
   - Default
   - TransparentFX
@@ -44,6 +45,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Hotspot
+    uniqueID: 2425384489
     locked: 0
   m_RenderingLayers:
   - Default

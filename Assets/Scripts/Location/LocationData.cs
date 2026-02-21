@@ -34,9 +34,4 @@ namespace VRCampusTour.Location
         public Sprite previewImage;
     }
 
-    [CreateAssetMenu(fileName = "NewLocation", menuName = "VR Campus Tour/Location Data")]
-    public class LocationDataSO : ScriptableObject
-    {
-        public List<LocationData> locations = new List<LocationData>();
-    }
 }
