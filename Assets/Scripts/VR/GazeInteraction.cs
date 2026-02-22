@@ -1,5 +1,7 @@
+// Scripts/VR/GazeInteraction.cs
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using VRCampusTour.Utils;
 using VRCampusTour.Interaction;
 
@@ -91,8 +93,9 @@ namespace VRCampusTour.VR
                     isGazing = true;
                     currentGazeTime += Time.deltaTime;
 
-                    // Check if gaze duration met
-                    if (currentGazeTime >= gazeDuration)
+                    // Check if gaze duration met OR mouse click
+                    bool mouseClicked = Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
+                    if (currentGazeTime >= gazeDuration || mouseClicked)
                     {
                         OnGazeComplete();
                     }
