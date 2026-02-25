@@ -54,8 +54,17 @@ namespace VRCampusTour.Interaction
                 iconImage.sprite = data.icon;
             }
 
-            // Set tag for raycasting
+            // Set tag and layer for raycasting
             gameObject.tag = Utils.Constants.TAG_INFO;
+            gameObject.layer = LayerMask.NameToLayer(Utils.Constants.LAYER_HOTSPOT);
+
+            // Also set children layer to ensure raycast hits them if they have colliders
+            foreach (Transform child in transform)
+            {
+                child.gameObject.layer = gameObject.layer;
+            }
+
+            Debug.Log($"[InfoHotspot] Initialized: {data.title} on layer: {gameObject.layer}");
         }
 
         public void OnInteract()

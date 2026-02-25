@@ -18,6 +18,9 @@ namespace VRCampusTour.Location
         [SerializeField] private GameObject infoHotspotPrefab;
         [SerializeField] private GameObject navigationHotspotPrefab;
 
+        [Header("Hotspot Settings")]
+        [SerializeField] private float eyeLevelHeight = 1.5f;
+
         [Header("Audio")]
         [SerializeField] private AudioClip transitionSound;
 
@@ -146,7 +149,11 @@ namespace VRCampusTour.Location
             if (infoHotspotPrefab == null || hotspotContainer == null) return;
 
             GameObject hotspot = Instantiate(infoHotspotPrefab, hotspotContainer);
-            hotspot.transform.position = data.worldPosition;
+            
+            // Apply eye level if height is 0
+            Vector3 spawnPos = data.worldPosition;
+            if (Mathf.Approximately(spawnPos.y, 0)) spawnPos.y = eyeLevelHeight;
+            hotspot.transform.position = spawnPos;
 
             // Look at camera
             if (Camera.main != null)
@@ -168,7 +175,11 @@ namespace VRCampusTour.Location
             if (navigationHotspotPrefab == null || hotspotContainer == null) return;
 
             GameObject hotspot = Instantiate(navigationHotspotPrefab, hotspotContainer);
-            hotspot.transform.position = data.worldPosition;
+            
+            // Apply eye level if height is 0
+            Vector3 spawnPos = data.worldPosition;
+            if (Mathf.Approximately(spawnPos.y, 0)) spawnPos.y = eyeLevelHeight;
+            hotspot.transform.position = spawnPos;
 
             // Look at camera
             if (Camera.main != null)
