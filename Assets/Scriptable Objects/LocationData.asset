@@ -89,11 +89,11 @@ MonoBehaviour:
     navigationPoints:
     - destinationName: Residential Street North
       destinationLocationIndex: 1
-      worldPosition: {x: 0, y: 0, z: -5}
+      worldPosition: {x: -1, y: 1, z: -17}
       previewImage: {fileID: 0}
     - destinationName: Pylon Intersection
       destinationLocationIndex: 3
-      worldPosition: {x: 0, y: 0, z: 5}
+      worldPosition: {x: 4, y: 3, z: 5}
       previewImage: {fileID: 0}
   - locationName: Pylon Intersection
     description: An open intersection dominated by a large steel electricity pylon.
@@ -116,11 +116,11 @@ MonoBehaviour:
     navigationPoints:
     - destinationName: Junction by Grey Wall
       destinationLocationIndex: 2
-      worldPosition: {x: 0, y: 0, z: -5}
+      worldPosition: {x: -18, y: 2, z: -4}
       previewImage: {fileID: 0}
     - destinationName: Sloping Road with Palm Trees
       destinationLocationIndex: 4
-      worldPosition: {x: 0, y: 0, z: 5}
+      worldPosition: {x: 12, y: 0, z: 4}
       previewImage: {fileID: 0}
   - locationName: Sloping Road with Palm Trees
     description: The road slopes downhill with a panoramic view of surrounding hills
@@ -143,11 +143,11 @@ MonoBehaviour:
     navigationPoints:
     - destinationName: Pylon Intersection
       destinationLocationIndex: 3
-      worldPosition: {x: 0, y: 0, z: -5}
+      worldPosition: {x: -7, y: 1, z: 2}
       previewImage: {fileID: 0}
     - destinationName: Ornate Gate Compound
       destinationLocationIndex: 5
-      worldPosition: {x: 0, y: 0, z: 5}
+      worldPosition: {x: 16, y: 0, z: 1}
       previewImage: {fileID: 0}
   - locationName: Ornate Gate Compound
     description: A striking property entrance with a decorative arched gate flanked
@@ -205,7 +205,7 @@ MonoBehaviour:
     navigationPoints:
     - destinationName: Ornate Gate Compound
       destinationLocationIndex: 5
-      worldPosition: {x: 0, y: 0, z: -5}
+      worldPosition: {x: 16, y: 0, z: -1}
       previewImage: {fileID: 0}
     - destinationName: Neighborhood Entrance
       destinationLocationIndex: 0
