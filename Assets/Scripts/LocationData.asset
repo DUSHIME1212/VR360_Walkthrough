@@ -1,0 +1,213 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: LocationData
+  m_EditorClassIdentifier: Assembly-CSharp:VRCampusTour.Location:LocationDataSO
+  locations:
+  - locationName: Neighborhood Entrance
+    description: The entry point to the residential area. A decorative blue and gold
+      gate marks the left boundary, with a yellow gate and green hedges on the right.
+      A dirt road leads deeper into the neighborhood.
+    skyboxMaterial: {fileID: 0}
+    ambienceAudio: {fileID: 0}
+    infoHotspots:
+    - title: Blue & Gold Gate
+      information: A prominent ornamental iron gate with geometric patterns in blue
+        and gold. This marks one of the main residential compound entrances in the
+        area.
+      worldPosition: {x: -4, y: 1.5, z: 3}
+      icon: {fileID: 0}
+    - title: Yellow Gate
+      information: A bright yellow painted metal gate with diamond motifs, surrounded
+        by manicured yellow-flowering hedges typical of the neighborhood style.
+      worldPosition: {x: 4, y: 1.5, z: 3}
+      icon: {fileID: 0}
+    navigationPoints:
+    - destinationName: Residential Street North
+      destinationLocationIndex: 1
+      worldPosition: {x: 0, y: 0, z: 5}
+      previewImage: {fileID: 0}
+  - locationName: Residential Street North
+    description: A paved residential road flanked by walled compounds. Palm trees
+      and a modern white multi-story house are visible ahead. A parked car sits near
+      one of the driveways.
+    skyboxMaterial: {fileID: 0}
+    ambienceAudio: {fileID: 0}
+    infoHotspots:
+    - title: Modern Residential House
+      information: A contemporary white two-story house with a flat roofline and balcony,
+        surrounded by palm trees. This style is increasingly common in newer Kigali
+        neighborhoods.
+      worldPosition: {x: 0, y: 2, z: 6}
+      icon: {fileID: 0}
+    - title: Stone Block Wall
+      information: Unfinished concrete block boundary wall, a common construction
+        material used for compound perimeters across the region.
+      worldPosition: {x: 5, y: 1, z: 2}
+      icon: {fileID: 0}
+    navigationPoints:
+    - destinationName: Neighborhood Entrance
+      destinationLocationIndex: 0
+      worldPosition: {x: 0, y: 0, z: -5}
+      previewImage: {fileID: 0}
+    - destinationName: Junction by Grey Wall
+      destinationLocationIndex: 2
+      worldPosition: {x: 0, y: 0, z: 5}
+      previewImage: {fileID: 0}
+  - locationName: Junction by Grey Wall
+    description: A quiet junction where a dark grey compound wall with barbed wire
+      meets the road. A power transmission tower rises above the roofline. Pink flowers
+      and ornamental plants decorate the roadside.
+    skyboxMaterial: {fileID: 0}
+    ambienceAudio: {fileID: 0}
+    infoHotspots:
+    - title: Power Transmission Tower
+      information: A steel lattice electricity pylon carrying high-voltage lines through
+        the neighborhood. Rwanda has rapidly expanded its national power grid in recent
+        years.
+      worldPosition: {x: 1, y: 4, z: 5}
+      icon: {fileID: 0}
+    - title: Barbed Wire Security
+      information: Coiled razor wire along compound walls is a common security feature
+        for residential properties throughout East Africa.
+      worldPosition: {x: -3, y: 2, z: 2}
+      icon: {fileID: 0}
+    - title: Roadside Flowers
+      information: Pink vinca (periwinkle) flowers planted along the compound wall
+        base, reflecting the pride residents take in beautifying their street frontage.
+      worldPosition: {x: -2, y: 0.5, z: 1}
+      icon: {fileID: 0}
+    navigationPoints:
+    - destinationName: Residential Street North
+      destinationLocationIndex: 1
+      worldPosition: {x: 0, y: 0, z: -5}
+      previewImage: {fileID: 0}
+    - destinationName: Pylon Intersection
+      destinationLocationIndex: 3
+      worldPosition: {x: 0, y: 0, z: 5}
+      previewImage: {fileID: 0}
+  - locationName: Pylon Intersection
+    description: An open intersection dominated by a large steel electricity pylon.
+      Well-maintained hedges and compound walls line both sides. The road continues
+      down a gentle slope toward the wider neighborhood.
+    skyboxMaterial: {fileID: 0}
+    ambienceAudio: {fileID: 0}
+    infoHotspots:
+    - title: Lattice Steel Pylon
+      information: A high-voltage transmission tower standing within the residential
+        zone. Infrastructure integration like this is common in rapidly developing
+        urban areas.
+      worldPosition: {x: -3, y: 5, z: 2}
+      icon: {fileID: 0}
+    - title: Trimmed Green Hedges
+      information: Neatly trimmed hedgerows form natural boundary walls for several
+        compounds, a popular landscaping choice that blends security with aesthetics.
+      worldPosition: {x: 3, y: 1, z: 4}
+      icon: {fileID: 0}
+    navigationPoints:
+    - destinationName: Junction by Grey Wall
+      destinationLocationIndex: 2
+      worldPosition: {x: 0, y: 0, z: -5}
+      previewImage: {fileID: 0}
+    - destinationName: Sloping Road with Palm Trees
+      destinationLocationIndex: 4
+      worldPosition: {x: 0, y: 0, z: 5}
+      previewImage: {fileID: 0}
+  - locationName: Sloping Road with Palm Trees
+    description: The road slopes downhill with a panoramic view of surrounding hills
+      in the distance. Palm trees rise behind compound walls. A utility junction box
+      sits at the roadside.
+    skyboxMaterial: {fileID: 0}
+    ambienceAudio: {fileID: 0}
+    infoHotspots:
+    - title: Distant Hills
+      information: The rolling green hills visible in the distance are characteristic
+        of the Kigali landscape — the city is famously known as the "City of a Thousand
+        Hills."
+      worldPosition: {x: 0, y: 1, z: 10}
+      icon: {fileID: 0}
+    - title: Utility Junction Box
+      information: A green roadside electrical or telecommunications utility box, part
+        of the neighborhood's infrastructure servicing nearby compounds.
+      worldPosition: {x: -1, y: 0.5, z: 3}
+      icon: {fileID: 0}
+    navigationPoints:
+    - destinationName: Pylon Intersection
+      destinationLocationIndex: 3
+      worldPosition: {x: 0, y: 0, z: -5}
+      previewImage: {fileID: 0}
+    - destinationName: Ornate Gate Compound
+      destinationLocationIndex: 5
+      worldPosition: {x: 0, y: 0, z: 5}
+      previewImage: {fileID: 0}
+  - locationName: Ornate Gate Compound
+    description: A striking property entrance with a decorative arched gate flanked
+      by stone pillars and palm trees. Across the road stands a tall brick multi-story
+      house with balconies. Hills are visible in the background.
+    skyboxMaterial: {fileID: 0}
+    ambienceAudio: {fileID: 0}
+    infoHotspots:
+    - title: Arched Ornamental Gate
+      information: An elaborate compound gate featuring a curved concrete arch, stone
+        column pillars, and a circular gold motif on the black metal door. A symbol
+        of the neighborhood's affluence.
+      worldPosition: {x: -3, y: 2, z: 4}
+      icon: {fileID: 0}
+    - title: Brick Multi-Story House
+      information: A large exposed-brick residential building with white columns and
+        iron balcony railings. Multi-story homes with balconies are increasingly popular
+        in upscale Kigali neighborhoods.
+      worldPosition: {x: 4, y: 3, z: 3}
+      icon: {fileID: 0}
+    navigationPoints:
+    - destinationName: Sloping Road with Palm Trees
+      destinationLocationIndex: 4
+      worldPosition: {x: 0, y: 0, z: -5}
+      previewImage: {fileID: 0}
+    - destinationName: Hilltop Viewpoint Road
+      destinationLocationIndex: 6
+      worldPosition: {x: 0, y: 0, z: 5}
+      previewImage: {fileID: 0}
+  - locationName: Hilltop Viewpoint Road
+    description: A hillside road with sweeping views across the valley and distant
+      hills. Stone boundary walls and manicured lawns line the route. A utility pole
+      with converging wires stands at the bend.
+    skyboxMaterial: {fileID: 0}
+    ambienceAudio: {fileID: 0}
+    infoHotspots:
+    - title: Valley Panorama
+      information: From this elevated position, densely settled valleys and forested
+        hillsides spread into the distance — a quintessential Kigali cityscape that
+        highlights the city's dramatic topography.
+      worldPosition: {x: 2, y: 1, z: 8}
+      icon: {fileID: 0}
+    - title: Stone Retaining Wall
+      information: A traditional rough-stone boundary wall running along the road edge,
+        supporting the hillside and defining compound limits. Stone is a locally abundant
+        and commonly used building material.
+      worldPosition: {x: -4, y: 1, z: 3}
+      icon: {fileID: 0}
+    - title: Utility Pole Junction
+      information: A wooden utility pole at the road bend where multiple electrical
+        and communication cables converge, typical of the last-mile distribution infrastructure
+        in residential areas.
+      worldPosition: {x: 1, y: 2, z: 4}
+      icon: {fileID: 0}
+    navigationPoints:
+    - destinationName: Ornate Gate Compound
+      destinationLocationIndex: 5
+      worldPosition: {x: 0, y: 0, z: -5}
+      previewImage: {fileID: 0}
+    - destinationName: Neighborhood Entrance
+      destinationLocationIndex: 0
+      worldPosition: {x: 0, y: 0, z: 5}
+      previewImage: {fileID: 0}

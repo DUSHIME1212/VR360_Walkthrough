@@ -1,5 +1,7 @@
+// Scripts/VR/GazeInteraction.cs
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using VRCampusTour.Utils;
 using VRCampusTour.Interaction;
 
@@ -38,12 +40,25 @@ namespace VRCampusTour.VR
 
         void Start()
         {
-            mainCamera = Camera.main;
+            // Try to find camera on this object or children first
+            mainCamera = GetComponentInChildren<Camera>();
+            if (mainCamera == null) mainCamera = Camera.main;
+            
             InitializeReticle();
+            
+            // Log configuration
+            Debug.Log($"[GazeInteraction] Initialized with camera: {(mainCamera != null ? mainCamera.name : "NULL")} and layer mask: {interactableLayer.value}");
         }
 
         void Update()
         {
+            // Keep trying to find the camera if it wasn't available
+            if (mainCamera == null)
+            {
+                mainCamera = Camera.main;
+                if (mainCamera == null) return;
+            }
+
             PerformGazeRaycast();
             UpdateGazeProgress();
             UpdateReticleVisuals();
@@ -68,15 +83,18 @@ namespace VRCampusTour.VR
             Ray ray = new Ray(mainCamera.transform.position, mainCamera.transform.forward);
             RaycastHit hit;
 
+            // 1. First try the filtered raycast (what we WANT to hit)
             if (Physics.Raycast(ray, out hit, gazeDistance, interactableLayer))
             {
-                IInteractable interactable = hit.collider.GetComponent<IInteractable>();
+                // Use GetComponentInParent to handle colliders on child objects
+                IInteractable interactable = hit.collider.GetComponentInParent<IInteractable>();
 
                 if (interactable != null && interactable.IsInteractable())
                 {
                     if (currentTarget != interactable)
                     {
                         // New target
+                        Debug.Log($"[GazeInteraction] Found interactable: {hit.collider.name} on {(interactable as MonoBehaviour)?.name}");
                         OnTargetChanged(interactable);
                     }
 
@@ -84,13 +102,33 @@ namespace VRCampusTour.VR
                     isGazing = true;
                     currentGazeTime += Time.deltaTime;
 
-                    // Check if gaze duration met
-                    if (currentGazeTime >= gazeDuration)
+                    // Check if gaze duration met OR mouse click
+                    bool mouseClicked = Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
+                    if (currentGazeTime >= gazeDuration || mouseClicked)
                     {
                         OnGazeComplete();
                     }
 
                     return;
+                }
+                else
+                {
+                    // Debug info for when we hit an interactable layer object but no IInteractable found
+                    if (Time.frameCount % 60 == 0) // Limit logging
+                    {
+                        Debug.LogWarning($"[GazeInteraction] Hit object '{hit.collider.name}' on Interactable layer ({LayerMask.LayerToName(hit.collider.gameObject.layer)}), but no IInteractable component found!");
+                    }
+                }
+            }
+            else 
+            {
+                // 2. DEBUG HIT ALL: If we hit nothing on the interactable layer, see what we ARE hitting
+                if (Physics.Raycast(ray, out hit, gazeDistance))
+                {
+                    if (Time.frameCount % 120 == 0) // Frequent enough to see when looking around
+                    {
+                        Debug.Log($"[GazeInteraction] DEBUG HIT: Ray is hitting '{hit.collider.name}' on layer '{LayerMask.LayerToName(hit.collider.gameObject.layer)}' (NOT in mask)");
+                    }
                 }
             }
 
