@@ -15,9 +15,9 @@ namespace VRCampusTour.UI
         [SerializeField] private Button closeButton;
         [SerializeField] private CanvasGroup canvasGroup;
 
-        [Header("Audio")]
-        [SerializeField] private AudioClip openSound;
-        [SerializeField] private AudioClip closeSound;
+        // [Header("Audio")]
+        // [SerializeField] private AudioClip openSound;
+        // [SerializeField] private AudioClip closeSound;
 
         private List<Button> navigationButtons = new List<Button>();
         private bool isVisible = false;
@@ -104,10 +104,10 @@ namespace VRCampusTour.UI
 
             gameObject.SetActive(true);
 
-            if (openSound != null && Core.AudioManager.Instance != null)
-            {
-                Core.AudioManager.Instance.PlaySFX(openSound);
-            }
+            // if (openSound != null && Core.AudioManager.Instance != null)
+            // {
+            //     Core.AudioManager.Instance.PlaySFX(openSound);
+            // }
         }
 
         public void Hide()
@@ -123,10 +123,10 @@ namespace VRCampusTour.UI
 
             gameObject.SetActive(false);
 
-            if (closeSound != null && Core.AudioManager.Instance != null)
-            {
-                Core.AudioManager.Instance.PlaySFX(closeSound);
-            }
+            // if (closeSound != null && Core.AudioManager.Instance != null)
+            // {
+            //     Core.AudioManager.Instance.PlaySFX(closeSound);
+            // }
         }
 
         public void Toggle()
